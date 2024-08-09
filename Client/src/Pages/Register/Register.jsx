@@ -1,22 +1,24 @@
 import React from 'react'
-import './Login.scss'
+import './Register.scss'
 
-function Login() {
+function Register() {
   return (
-    <div className='login'>
+    <div className='register'>
       <div className="card">
         <div className="left">
-            <h1>Hello World!</h1>
+            <h1>Social Net!</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque laudantium quia tenetur possimus cumque</p>
-            <span>Don't have an account?</span>
-            <button>Register</button>
+            <span>Already have an account?</span>
+            <button>Login</button>
         </div>
         <div className="right">
-            <h1>Login</h1>
+            <h1>Register</h1>
             <form action="">
+                <input type="email" placeholder='Email'/>
+                <input type="text" placeholder='Name'/>
                 <input type="text" placeholder='Username'/>
                 <input type="password" placeholder='Password' />
-                <button>Login</button>
+                <button>Sign Up</button>
             </form>
         </div>
       </div>
@@ -24,4 +26,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Register

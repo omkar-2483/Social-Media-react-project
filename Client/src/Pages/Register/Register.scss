@@ -1,0 +1,75 @@
+.register{
+    background-color: #96C9F4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 50%;
+        background-color: white;
+        border-radius: 10px;
+        min-height: 450px;
+        max-height: 70%;
+        overflow: hidden;
+        .left{
+            background:linear-gradient(#0f68b1a8,rgba(0, 0, 0, 0.616)), url('Images/register-bg.jpg') center;
+            background-size: cover;
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: white;
+            h1{
+                font-size: 90px;
+                line-height: 100px;
+            }
+            span{
+                font-size: 14px;
+            }
+            button{
+                width: 50%;
+                padding: 8px;
+                border: none;
+                background-color: white;
+                color: #6d3ff6;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+        }
+
+        .right{
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            h1{
+                color:#2903a5;}
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                input{
+                    border: none;
+                    border-bottom: 1px solid lightgray;
+                    padding: 20px 10px;
+                }
+                button{
+                    width: 50%;
+                    padding: 8px;
+                    border: none;
+                    color: white;
+                    background-color: #6d3ff6;
+                    font-weight: bold;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
