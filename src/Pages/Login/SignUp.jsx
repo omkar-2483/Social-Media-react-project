@@ -1,22 +1,23 @@
 import React from 'react'
 import './Login.css'
 
-function Login() {
+function SignUp() {
   return (
     <div>
       <div className="formContainer">
-        <div className="formWrap">
-            <span>Login</span>
+      <div className="formWrap">
+            <span>Sign up</span>
             <form>
                 <input type="email" placeholder='Email'/>
+                <input type="text" name="username" placeholder='Username' />
                 <input type="password" placeholder='Password'/>
-                <button>Login</button>
+                <button>Sign Up</button>
             </form>
-            <p>Don't have an account <a href="">Register Here</a></p>
+            <p>Already have an account <a href="">Login Here</a></p>
         </div>
       </div>
     </div>
   )
 }
 
-export default Login;
+export default SignUp
