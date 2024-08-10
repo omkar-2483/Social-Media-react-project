@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Profile() {
+function Leftbar() {
   return (
     <div>
-      profile
+      leftbar
     </div>
   )
 }
 
-export default Profile
+export default Leftbar

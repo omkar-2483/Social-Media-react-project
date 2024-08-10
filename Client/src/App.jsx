@@ -1,15 +1,76 @@
-import "./App.css"
+import "./App.css";
+import Leftbar from "./components/leftbar/Leftbar";
+import Navbar from "./components/navbar/Navbar";
+import Rightbar from "./components/rightbar/Rightbar";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
+import Home from "./Pages/Home/Home";
+import Profile from "./Pages/Profile/Profile";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+  Navigate,
+} from "react-router-dom";
 
 function App() {
+  const currUser = false;
+  const Layout = () => {
+    return (
+      <div>
+        <Navbar />
+        <div style={{ display: "flex" }}>
+          <Leftbar />
+          <Outlet />
+          <Rightbar />
+        </div>
+      </div>
+    );
+  };
+
+  //render page only if logged in
+  const ProtectedRoute = ({ children }) => {
+    if (!currUser) {
+      return <Navigate to="/login" />;
+    }
+
+    return children;
+  };
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
+        <ProtectedRoute>
+          <Layout />
+        </ProtectedRoute>
+      ),
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/profile/:id",
+          element: <Profile />,
+        },
+      ],
+    },
+    {
+      path: "/login",
+      element: <Login />,
+    },
+    {
+      path: "/register",
+      element: <Register />,
+    },
+  ]);
+
   return (
-    <>
-      <h1></h1>
-       <Login />
-       <Register />
-    </>
+    <div>
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
-export default App
+export default App;
