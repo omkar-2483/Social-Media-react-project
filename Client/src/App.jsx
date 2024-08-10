@@ -14,14 +14,14 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const currUser = false;
+  const currUser = true;
   const Layout = () => {
     return (
       <div>
         <Navbar />
         <div style={{ display: "flex" }}>
           <Leftbar />
-          <Outlet />
+          <div style={{flex: 6}}><Outlet /></div>
           <Rightbar />
         </div>
       </div>
