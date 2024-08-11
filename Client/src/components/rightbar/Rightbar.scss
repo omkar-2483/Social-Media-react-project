@@ -2,10 +2,82 @@
     flex: 3;
     position: sticky;
     top: 70px;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 71px);
     overflow: scroll;
 
     &::-webkit-scrollbar{
         display: none;
+    }
+
+    .container{
+        padding: 20px;
+        .item{
+            padding: 20px;
+            margin-bottom: 20px;
+            -webkit-box-shadow: -1px 3px 11px -3px rgba(0,0,0,0.75);
+            -moz-box-shadow: -1px 3px 11px -3px rgba(0,0,0,0.75);
+            box-shadow: -1px 3px 11px -3px rgba(0,0,0,0.75);
+            span{color: gray;}
+            .user{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px 0;
+                .userInfo{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    position: relative;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                    .online{
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background-color: limegreen;
+                        position: absolute;
+                        top: 0;
+                        left: 30px;
+                    }
+                    p{
+                        color: gray;
+                    }
+                    span{
+                        font-weight:500;
+                        color: black;
+                    }
+                }
+
+                .buttons{
+                    display: flex;
+                    gap: 10px;
+                    button{
+                        border: none;
+                        padding: 5px;
+                        color: white;
+                        cursor: pointer;
+                        border-radius: 5px;
+
+                        &:first-child{
+                            background-color: #3FA2F6;
+                            &:hover{
+                                background-color: #037ce5;
+                            }
+                        }
+                        &:last-child{
+                            background-color: #E72929;
+                            &:hover{
+                                background-color: #ca0404;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
     }
 }
