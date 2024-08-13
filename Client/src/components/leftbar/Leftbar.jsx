@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext} from 'react'
 import Friends from "../../assets/1.png";
 import Groups from "../../assets/2.png";
 import Market from "../../assets/3.png";
@@ -13,10 +13,12 @@ import Tutorials from "../../assets/11.png";
 import Courses from "../../assets/12.png";
 import Fund from "../../assets/13.png";
 import "./Leftbar.scss";
+import { DarkModeContext } from '../../context/DarkModeContext';
 
 function Leftbar() {
+  const {darkMode} = useContext(DarkModeContext);
   return (
-    <div className="leftbar">
+    <div className={`leftbar leftbar-${darkMode? "dark":""}`}>
       <div className="container">
         <div className="menu">
           <div className="user">

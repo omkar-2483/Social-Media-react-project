@@ -29,6 +29,7 @@
             input{
                 border: none;
                 width: 500px;
+                outline: none;
             }
         }
     }
@@ -49,6 +50,28 @@
             }
             span{
                 font-weight: bold;
+            }
+        }
+    }
+}
+
+
+.navbar-dark{
+    border-bottom: 1px solid rgb(138, 137, 137);
+    background-color: #222831;
+    color: white;
+
+    .left{
+        span{
+            color: #EEEEEE;
+        }
+
+        .search{
+            border: 1px solid grey;
+            input{
+                background-color: #222831;
+                color: white;
+                outline: none;
             }
         }
     }

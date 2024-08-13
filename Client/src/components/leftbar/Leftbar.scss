@@ -55,3 +55,29 @@
         }
     }
 }
+
+//dark mode
+.leftbar-dark{
+    .container{
+        background-color: #222831;
+        hr{
+            background-color: rgb(114, 114, 114);
+        }
+        .menu{
+            span{
+                color: rgb(198, 197, 197);
+            }
+            .user{
+                span{
+                    color: white;
+                }
+            }
+
+            .item{
+                span{
+                    color: white;
+                }
+            }
+        }
+    }
+}

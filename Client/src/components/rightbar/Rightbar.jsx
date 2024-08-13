@@ -1,8 +1,11 @@
-import React from "react";
+import {React, useContext} from "react";
 import "./Rightbar.scss";
+import { DarkModeContext } from '../../context/DarkModeContext';
+
 function Rightbar() {
+  const {darkMode} = useContext(DarkModeContext);
   return (
-    <div className="Rightbar">
+    <div className={`Rightbar right-${darkMode? "dark":""}`}>
       <div className="container">
         <div className="item">
           <span>Suggested for you</span>

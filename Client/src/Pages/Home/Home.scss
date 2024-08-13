@@ -1,0 +1,14 @@
+.home{
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 71px - 40px);
+    overflow: scroll;
+    padding:20px 70px;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+.home-dark{
+    background-color: #3e4147;
+}

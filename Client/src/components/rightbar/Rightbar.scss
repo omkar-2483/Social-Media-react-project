@@ -81,3 +81,23 @@
         }
     }
 }
+
+// dark mode
+.right-dark{
+    .container{
+        background-color: #3e4147;
+        .item{            
+            background-color: #222831;
+            .user{
+                .userInfo{
+                    p{
+                        color: rgb(157, 156, 156);
+                    }
+                    span{
+                        color: rgb(234, 232, 232);
+                    }
+                }
+            }
+        }
+    }
+}

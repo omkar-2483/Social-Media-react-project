@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import Leftbar from "./components/leftbar/Leftbar";
 import Navbar from "./components/navbar/Navbar";
 import Rightbar from "./components/rightbar/Rightbar";
