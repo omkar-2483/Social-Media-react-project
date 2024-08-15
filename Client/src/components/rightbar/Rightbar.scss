@@ -11,9 +11,11 @@
 
     .container{
         padding: 20px;
+        background-color: rgb(225, 225, 225);
         .item{
             padding: 20px;
             margin-bottom: 20px;
+            background-color: white;
             -webkit-box-shadow: -1px 3px 11px -3px rgba(0,0,0,0.75);
             -moz-box-shadow: -1px 3px 11px -3px rgba(0,0,0,0.75);
             box-shadow: -1px 3px 11px -3px rgba(0,0,0,0.75);

@@ -10,10 +10,12 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import './Navbar.scss';
 import { DarkModeContext } from '../../context/DarkModeContext';
+import { AuthContext } from '../../context/AuthContext';
 
 function Navbar() {
   const {darkMode} = useContext(DarkModeContext);
   const {toggle} = useContext(DarkModeContext);
+  const {currUser} = useContext(AuthContext);
   return (
     <div className={`navbar navbar-${darkMode? "dark":""}`}>
       <div className="left">
@@ -31,8 +33,8 @@ function Navbar() {
         <NotificationsNoneOutlinedIcon/>
         <EmailOutlinedIcon/>
         <div className="user">
-            <img src="https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D" alt="DP" />
-            <span>Omkar Kasture</span>
+            <img src={currUser.profilePic} alt="DP" />
+            <span>{currUser.name}</span>
         </div>
       </div>
     </div>

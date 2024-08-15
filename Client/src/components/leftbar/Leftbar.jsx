@@ -14,19 +14,21 @@ import Courses from "../../assets/12.png";
 import Fund from "../../assets/13.png";
 import "./Leftbar.scss";
 import { DarkModeContext } from '../../context/DarkModeContext';
+import { AuthContext } from '../../context/AuthContext';
 
 function Leftbar() {
   const {darkMode} = useContext(DarkModeContext);
+  const {currUser} = useContext(AuthContext);
   return (
     <div className={`leftbar leftbar-${darkMode? "dark":""}`}>
       <div className="container">
         <div className="menu">
           <div className="user">
             <img
-              src="https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D"
+              src={currUser.profilePic}
               alt="DP"
             />
-            <span>Omkar Kasture</span>
+            <span>{currUser.name}</span>
           </div>
           <div className="item">
             <img src={Friends} alt="" />

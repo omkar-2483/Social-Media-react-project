@@ -12,9 +12,12 @@ import {
   Outlet,
   Navigate,
 } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "./context/AuthContext";
 
 function App() {
-  const currUser = true;
+  const { currUser }= useContext(AuthContext)
+
   const Layout = () => {
     return (
       <div>
@@ -39,6 +42,14 @@ function App() {
 
   const router = createBrowserRouter([
     {
+      path: "/login",
+      element: <Login />,
+    },
+    {
+      path: "/register",
+      element: <Register />,
+    },
+    {
       path: "/",
       element: (
         <ProtectedRoute>
@@ -55,14 +66,6 @@ function App() {
           element: <Profile />,
         },
       ],
-    },
-    {
-      path: "/login",
-      element: <Login />,
-    },
-    {
-      path: "/register",
-      element: <Register />,
     },
   ]);
 
