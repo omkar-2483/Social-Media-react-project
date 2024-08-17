@@ -1,7 +1,7 @@
 .stories{
     display: flex;
     gap: 10px;
-    height: 250px;
+    height: 200px;
     margin-bottom: 30px;
     .story{
         flex: 1;
@@ -17,6 +17,24 @@
             position: absolute;
             bottom: 10px;
             left: 10px;
+            color: white;
+            font-weight: 500;
+        }
+        button{
+            color: white;
+            position: absolute;
+            bottom: 35px;
+            left: 10px;
+            background-color: #3f70f6;
+            border-radius: 50%;
+            border: none;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
