@@ -19,6 +19,50 @@ function Rightbar() {
               <button>Dismiss</button>
             </div>
           </div>
+
+          <div className="user">
+            <div className="userInfo">
+              <img src="https://images.unsplash.com/photo-1676195470090-7c90bf539b3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMGljb258ZW58MHx8MHx8fDA%3D" />
+              <span>Omkar Kasture</span>
+            </div>
+            <div className="buttons">
+              <button>Follow</button>
+              <button>Dismiss</button>
+            </div>
+          </div>
+
+          <div className="user">
+            <div className="userInfo">
+              <img src="https://images.unsplash.com/photo-1676195470090-7c90bf539b3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMGljb258ZW58MHx8MHx8fDA%3D" />
+              <span>Omkar Kasture</span>
+            </div>
+            <div className="buttons">
+              <button>Follow</button>
+              <button>Dismiss</button>
+            </div>
+          </div>
+
+          <div className="user">
+            <div className="userInfo">
+              <img src="https://images.unsplash.com/photo-1676195470090-7c90bf539b3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMGljb258ZW58MHx8MHx8fDA%3D" />
+              <span>Omkar Kasture</span>
+            </div>
+            <div className="buttons">
+              <button>Follow</button>
+              <button>Dismiss</button>
+            </div>
+          </div>
+
+          <div className="user">
+            <div className="userInfo">
+              <img src="https://images.unsplash.com/photo-1676195470090-7c90bf539b3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMGljb258ZW58MHx8MHx8fDA%3D" />
+              <span>Omkar Kasture</span>
+            </div>
+            <div className="buttons">
+              <button>Follow</button>
+              <button>Dismiss</button>
+            </div>
+          </div>
           <div className="user">
             <div className="userInfo">
               <img src="https://images.unsplash.com/photo-1676195470090-7c90bf539b3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMGljb258ZW58MHx8MHx8fDA%3D" />
@@ -33,6 +77,46 @@ function Rightbar() {
 
         <div className="item">
           <span>Latest Activities</span>
+          <div className="user">
+            <div className="userInfo">
+              <img src="https://images.unsplash.com/photo-1676195470090-7c90bf539b3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMGljb258ZW58MHx8MHx8fDA%3D" />
+              <p>
+                <span>John Doe</span> Changed his profile picture
+              </p>
+            </div>
+            <span>1 min ago</span>
+          </div>
+
+          <div className="user">
+            <div className="userInfo">
+              <img src="https://images.unsplash.com/photo-1676195470090-7c90bf539b3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMGljb258ZW58MHx8MHx8fDA%3D" />
+              <p>
+                <span>John Doe</span> Changed his profile picture
+              </p>
+            </div>
+            <span>1 min ago</span>
+          </div>
+
+          <div className="user">
+            <div className="userInfo">
+              <img src="https://images.unsplash.com/photo-1676195470090-7c90bf539b3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMGljb258ZW58MHx8MHx8fDA%3D" />
+              <p>
+                <span>John Doe</span> Changed his profile picture
+              </p>
+            </div>
+            <span>1 min ago</span>
+          </div>
+
+          <div className="user">
+            <div className="userInfo">
+              <img src="https://images.unsplash.com/photo-1676195470090-7c90bf539b3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMGljb258ZW58MHx8MHx8fDA%3D" />
+              <p>
+                <span>John Doe</span> Changed his profile picture
+              </p>
+            </div>
+            <span>1 min ago</span>
+          </div>
+
           <div className="user">
             <div className="userInfo">
               <img src="https://images.unsplash.com/photo-1676195470090-7c90bf539b3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMGljb258ZW58MHx8MHx8fDA%3D" />

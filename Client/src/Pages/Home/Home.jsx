@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { DarkModeContext } from "../../context/DarkModeContext";
 import Stories from "../../components/stories/Stories";
 import Posts from "../../components/posts/Posts";
+import Profile from "../Profile/Profile";
 
 function Home() {
   const {darkMode} = useContext(DarkModeContext);
