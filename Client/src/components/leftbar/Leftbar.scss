@@ -18,9 +18,6 @@
     
     .container{
         padding: 20px;
-        @include tablet {
-            height: calc(100vh);
-        }
         hr{
             margin: 20px 0px;
             border: none;
@@ -69,6 +66,7 @@
 
 //dark mode
 .leftbar-dark{
+    background-color: #222831;
     .container{
         background-color: #222831;
         hr{
