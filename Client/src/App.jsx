@@ -6,6 +6,7 @@ import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 import Home from "./Pages/Home/Home";
 import Profile from "./Pages/Profile/Profile";
+import { QueryClient, QueryClientProvider } from "react-query";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -16,18 +17,24 @@ import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
 
 function App() {
-  const { currUser }= useContext(AuthContext)
+  const { currUser } = useContext(AuthContext);
+
+  const queryClient = new QueryClient()
 
   const Layout = () => {
     return (
-      <div>
-        <Navbar />
-        <div style={{ display: "flex" }}>
-          <Leftbar />
-          <div style={{flex: 6}}><Outlet /></div>
-          <Rightbar />
+      <QueryClientProvider client={queryClient}>
+        <div>
+          <Navbar />
+          <div style={{ display: "flex" }}>
+            <Leftbar />
+            <div style={{ flex: 6 }}>
+              <Outlet />
+            </div>
+            <Rightbar />
+          </div>
         </div>
-      </div>
+      </QueryClientProvider>
     );
   };
 
